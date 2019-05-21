@@ -29,9 +29,13 @@ class Arrow:
 		global t
 
 		# horizontal distance covered
-		self.x += self.velx * t 
-		# y position for given x (translating x and y with the offset)
-		self.y = self.yoffset-(math.tan(self.angle)*(self.x-self.xoffset)-GRAVITY*(self.x-self.xoffset)**2/(2* self.velocity**2 * math.cos(self.angle)**2))
+		self.x += self.velx * t
+		
+		if self.angle == math.pi / 2:
+			self.y -= self.vely * t - (GRAVITY)*t*t / 2
+		else: 
+			# y position for given x (translating x and y with the offset)
+			self.y = self.yoffset-(math.tan(self.angle)*(self.x-self.xoffset)-GRAVITY*(self.x-self.xoffset)**2/(2* self.velocity**2 * math.cos(self.angle)**2))
 		
 		# change in y component of velocity
 		self.vely = self.vely - GRAVITY * t

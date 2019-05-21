@@ -10,9 +10,10 @@ class PipePair:
 	def __init__(self, x):	
 		self.x = x
 		# getting random height and gap(80) for pipe pairs
+		self.gap = random.randint(80, 200)
 		self.height = random.randint(50, 500)
 		self.rectUp = pygame.Rect(self.x, 0, 50, self.height)
-		self.rectDown = pygame.Rect(self.x, self.height+80, 50, HEIGHT-self.height-40)
+		self.rectDown = pygame.Rect(self.x, self.height+self.gap, 50, HEIGHT-self.height-40)
 	
 	# defining motion of pipe
 	def update(self, Bird):

@@ -20,9 +20,14 @@ while True:
 		if event.type == pygame.MOUSEBUTTONUP and event.button == 1:
 			mouse = pygame.mouse.get_pos()
 			magnitude = math.sqrt((mouse[0]-anchorPoint[0])**2 + (mouse[1]-anchorPoint[1])**2)
+			
+			try:
+				a = ((float(mouse[1])-float(anchorPoint[1]))/(float(anchorPoint[0])-float(mouse[0])))
+				angle = math.atan(a)
+				print angle
+			except:
+				angle = math.pi/2
 
-			a = ((float(mouse[1])-float(anchorPoint[1]))/(float(anchorPoint[0])-float(mouse[0])))
-			angle = math.atan(a)
 			if magnitude <= 80:
 				velocity = magnitude * 2 
 			else:

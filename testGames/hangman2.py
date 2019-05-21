@@ -60,7 +60,7 @@ O   |
 
 print ('Let\'s start the game')
 
-words = 'ant baboon badger bat bear beaver camel cat clam cobra cougar coyote crow deer dog donkey duck eagle ferret fox frog goat goose hawk lion lizard llama mole monkey moose mouse mule otter owl panda parrot pigeon python rabbit ram rat raven rhino salmon seal shark sheep skunk sloth snake spider stork swan tiger toad turkey turtle weasel whale wolf wombat zebra'.split()
+words = 'ant lilly rose garden erangel vikendi sanhok miramar baboon  bat bear beaver camel cat clam cobra cougar crow deer dog donkey duck eagle fox frog goat goose hawk lion lizard socket packet mole monkey moose mouse mule otter owl panda parrot pigeon python rabbit ram rat raven rhino salmon seal shark sheep skunk sloth snake spider stork swan tiger toad turkey turtle weasel whale wolf wombat zebra green street park fish computer lizard'.split()
 
 alphabets = 'abcdefghijklmnopqrstuvwxyz'
 
